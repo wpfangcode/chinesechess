@@ -29,7 +29,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
-    // TODO: 在此放置程式碼。
 
     // 將全域字串初始化
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
@@ -134,6 +133,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			ES_LEFT | ES_MULTILINE | ES_AUTOVSCROLL,
 			0, 0, 0, 0, hWnd, (HMENU)2, hInst, nullptr);
 		::hwndData = hwndData;
+		int x=5;
 		
 	}
 	break;
